@@ -1,0 +1,315 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+margin: 0;
+}
+
+body {
+/* 3. Add accessible line-height */
+line-height: 1.5;
+/* 4. Improve text rendering */
+-webkit-font-smoothing: antialiased;
+background-color: #F5F8FA;
+width: 100%;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+font: inherit;
+}
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+text-wrap: balance;
+}
+/*
+9. Create a root stacking context
+*/
+#root, #__next {
+isolation: isolate;
+}
+nav {
+    margin: 0 40px;
+    padding: 20px 0;
+    border-bottom: 2px solid #E0E6EA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F8FA;
+    margin-bottom: 87px;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 42px;
+    cursor: pointer;    
+    li {
+        padding: 6px 8px;
+    }
+    li:hover {
+        border: 2px solid #646E7A;
+        border-radius: 6px;
+    }
+}
+.account {
+    border: 2px solid #646E7A;
+    border-radius: 6px;
+}
+nav img {
+    width: 200px;
+    height: 39px;
+}
+.menu {
+    display: none;
+}
+.container {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0px 15px 35px 0px rgba(43, 64, 78, 0.10), 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffff;
+}
+.checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #ffff;
+    padding-bottom: 40px;
+    width: 70%;
+    border-radius: 6px;
+}
+h1 {
+    /* border-bottom: 2px solid #F5F7FA; */
+    padding-top: 40px;
+    /* padding: 40px; */
+    padding-left: 40px;
+    padding-right: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+hr {
+    max-width: 100%;
+    border-width: 0;
+    background-color: #e0e6ea;
+    color: #e0e6ea;
+    height: 1px;
+}
+.basic-info, .payment, .button {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.one, .help {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+
+}
+.one p, #one {
+    border: 2px solid #548BC5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #548BC5;
+}
+.name {
+    display: flex;
+    gap: 12px;
+}
+input {
+    background-color: #EDEFF2;
+    border-radius: 4px;
+    padding: 4px;
+    border: none;
+}
+.email, .firstname, .lastname {
+    display: flex;
+    flex-direction: column;
+}
+.email input {
+    width: 50%;
+}
+.card-number {
+    width: 100%;
+    display: flex;
+    border-radius: 4px;
+}
+#date {
+    border-radius: 0;
+    width: 20%;
+    text-align: right;
+}
+#card-number {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 70%;
+}
+#cvc {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 20%;
+    text-align: right;
+}
+button {
+    background-color: #038E7D;
+    color: #ffff;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 0;
+}
+.help {
+    align-self: center;
+    font-size: 14px;
+}
+.support {
+    color: #646E7A;
+}
+#stripe {
+    align-self: center;
+}
+.freelancer {
+    background-color: #1179BF;
+    height: auto;
+    padding: 30px;
+    color: #ffff;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 154px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+ul li {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin-left: -40px;
+}
+.avatar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+footer {
+    text-align: center;
+    margin: 32px 0;
+    font-size: 14px;
+}
+footer a {
+    color: #31708F;
+}
+footer p {
+    color: #636B6F;
+}
+@media (min-width: 375px) and (max-width: 768px){
+    nav img {
+        width: 120px;
+    }
+    nav {
+        margin-bottom: 20px;
+    }
+    .nav-list {
+        display: none;
+    }
+    h1 {
+        padding-top: 20px;
+    }
+    .menu {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        gap: 3px;
+    }
+    .menu img {
+        height: 24px;
+        align-items: end;
+        width: 24px;
+    }
+    .menu:hover {
+        .dropdown-content {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            /* background-color: #fff; */
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+            padding: 10px 0;
+            /* width: 300px; */
+            font-size: small;
+            align-items: start;
+            justify-content: center;
+        }
+    }
+    .account {
+        border: none;
+    }
+    .dropdown-content {
+        display: none;
+        
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: flex-start;
+        width: 90%;
+    }
+    .checkout {
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .heading {
+        font-size: 18px;
+    }
+    .name, .email input {
+        flex-direction: column;
+        width: 100%;
+    }
+    .basic-info, .payment, .button {
+        padding: 0 30px;
+    }
+    .help {
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: center;
+        width: 94%;
+        margin: 0 auto;
+    }
+    .freelancer {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 6px;
+    }
+    #one {
+        height: 25px;
+    }
+}
