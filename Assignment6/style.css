@@ -183,8 +183,9 @@ aside {
     width: 100%;
     max-width: 300px;
     height: auto;
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
+    margin-bottom: 30px;
 }
 
 .tray {
@@ -194,6 +195,7 @@ aside {
     background-color: #f8f7f7;
     transform: perspective(400px) rotateX(30deg); /* Tilts backward */
     clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%); /* Slanted edges */
+    padding-left: 150px;
 }
 
 .shadow {
@@ -211,7 +213,7 @@ aside {
 }
 
 .section-two {
-    margin-bottom: 128px;
+    margin-bottom: 50px;
 }
 
 .stat {
@@ -223,12 +225,13 @@ aside {
     padding: 20px;
 }
 
-.stat-heading {
-    text-align: center;
+.stat-heading, #Possibilities {
+    font-weight: 900;
 }
 
 .stat-heading h2 {
     font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .stat-text {
@@ -240,6 +243,7 @@ aside {
 
 .stat-text h3 {
     font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .stat-text p {
@@ -334,7 +338,7 @@ p {
     background: #1e3448;
     color: white;
     margin: -20px;
-    padding: 60px 30px;
+    padding: 70px 30px;
     max-width: 320px;
     z-index: 2;
     transform: scale(1.1);
@@ -406,8 +410,10 @@ ul li img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    background: #1e3448;
+    height: 426px;
+    background-image: url('/Assignment6//images/revolutionBG.png');
+    background-size: cover;
+    background-position: center;
     padding: 20px;
 }
 
@@ -550,7 +556,7 @@ details p {
 }
 
 .pre-footer {
-    background-image: url('/images/revolutionBG.png');
+    background-image: url('/Assignment6/images/revolutionBG.png');
     background-size: cover;
     background-position: center;
     width: 100%;
