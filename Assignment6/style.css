@@ -181,21 +181,25 @@ aside {
     z-index: -1;
     top: -8px;
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    max-width: 251.202px;
+    height: 201.202px;
     left: 20%;
     transform: translateX(-50%);
     margin-bottom: 30px;
 }
 
 .tray {
+    border-radius:50%;
+    background: linear-gradient(180deg, rgba(226, 233, 240, 0.70) 10.68%, rgba(220, 228, 235, 0.70) 44.01%, rgba(226, 233, 240, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(18, 36, 89, 0.35);
     position: relative;
     width: 100%;
-    height: 120px;
-    background-color: #f8f7f7;
-    transform: perspective(400px) rotateX(30deg); /* Tilts backward */
-    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%); /* Slanted edges */
-    padding-left: 150px;
+    height: 49px;
+    margin: 0 auto;
+    /* background-color: #f8f7f7;
+    transform: perspective(400px) rotateX(30deg); 
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    padding-left: 150px; */
 }
 
 .shadow {
@@ -219,10 +223,10 @@ aside {
 .stat {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     gap: 20px;
     background-color: #F9FBFD;
-    padding: 20px;
+    padding: 20px ;
 }
 
 .stat-heading, #Possibilities {
@@ -237,7 +241,6 @@ aside {
 .stat-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
 }
 
@@ -624,8 +627,11 @@ footer {
     gap: 20px;
     width: 100%;
     text-align: left;
+    margin-bottom: 20px;
 }
-
+.footer-group2 h5{
+    font-size: larger;
+}
 .footer-group2 div {
     display: flex;
     flex-direction: column;
@@ -652,7 +658,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
+   
 }
 
 @media (min-width: 768px) {
@@ -675,7 +681,8 @@ footer {
     .stat {
         flex-direction: row;
         justify-content: center;
-        gap: 100px;
+        gap: 70px;
+        text-align: left;
     }
 
     .section-three {
@@ -704,5 +711,11 @@ footer {
        
         flex-direction: row;
         gap: 36px;
+    }
+
+    .tray {
+        border-radius:50%;
+        width: 60%;
+       
     }
 }
