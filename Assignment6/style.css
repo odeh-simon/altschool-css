@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 /* End of CSS Reset */
 body {
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato, Arial, Helvetica, sans-serif;
     padding: 0 20px;
 }
 
@@ -60,8 +60,10 @@ nav, .section-one, .section-three {
 
 nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 50px;
     flex-wrap: wrap;
@@ -153,15 +155,22 @@ aside {
 
 .link-container {
     position: relative;
-    border: 1px solid #0065FE;
-    border-radius: 15px;
+    background: rgba(254, 254, 254, 0.10);
+    background-image: url('/Assignment6/images/Vector\ 2\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:left;
     width: 100%;
+    opacity: 0.6;
     max-width: 600px;
     display: grid;
     height: auto;
     place-self: flex-end;
     margin-bottom: 60px;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 24px;
+    border: 0.5px solid var(--Primary-400, #005AE2);  
+    backdrop-filter: blur(106px);
 }
 
 .link-container p {
@@ -569,7 +578,7 @@ details p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .pre-footer div {
@@ -595,15 +604,18 @@ details p {
 
 footer {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    background-image: url('/Assignment6/images/bottom-left-bg.svg'), url('/Assignment6/images/bottom-right-bg.svg');
+    background-position: bottom left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size:auto, auto;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
     gap: 36px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .footer-group1 {
@@ -667,6 +679,10 @@ footer {
     }
 
     nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 0px;
+        justify-content: space-between;
         flex-wrap: nowrap;
     }
 
@@ -707,8 +723,7 @@ footer {
         width: 100%;
     }
 
-    .footer {
-       
+    .footer {  
         flex-direction: row;
         gap: 36px;
     }

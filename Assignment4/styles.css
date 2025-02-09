@@ -19,6 +19,13 @@ body {
 
 .info-section {
     margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-section img{
+    width: 77.33329772949219px;
 }
 
 .info-section h2 {

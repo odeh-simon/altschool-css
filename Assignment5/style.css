@@ -15,6 +15,7 @@ line-height: 1.5;
 -webkit-font-smoothing: antialiased;
 background-color: #F5F8FA;
 width: 100%;
+font-family: Lato, sans-serif;
 }
 
 /* 5. Improve media defaults */
@@ -87,6 +88,7 @@ nav img {
     display: flex;
     align-items: flex-start;
     background-color: #ffff;
+    font-family: Lato, Arial, sans-serif;
 }
 .checkout {
     display: flex;
